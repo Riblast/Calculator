@@ -1,0 +1,170 @@
+.switch.left-to-center {
+  animation-name: leftToCenter;
+  animation-duration: 0.5s;
+}
+
+.switch.left-to-right {
+  animation-name: leftToRight;
+  animation-duration: 0.5s;
+}
+
+.switch.left-position {
+  right: 59px;
+}
+
+@keyframes leftToCenter {
+  from {
+    right: 59px;
+  }
+  to {
+    right: 46px;
+  }
+}
+
+@keyframes leftToRight {
+  from {
+    right: 59px;
+  }
+  to {
+    right: 33px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .switch.left-position {
+    right: 507px;
+  }
+  
+  @keyframes leftToCenter {
+    from {
+      right: 507px;
+    }
+    to {
+      right: 494px;
+    }
+  }
+  
+  @keyframes leftToRight {
+    from {
+      right: 507px;
+    }
+    to {
+      right: 481px;
+    }
+  }
+}
+
+/* center */
+
+.switch.center-to-left {
+  animation-name: centerToLeft;
+  animation-duration: 0.5s;
+}
+
+.switch.center-to-right {
+  animation-name: centerToRight;
+  animation-duration: 0.5s;
+}
+
+.switch.center-position {
+  right: 46px;
+}
+
+@keyframes centerToLeft {
+  from {
+    right: 46px;
+  }
+  to {
+    right: 59px;
+  }
+}
+
+@keyframes centerToRight {
+  from {
+    right: 46px;
+  }
+  to {
+    right: 33px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .switch.center-position {
+    right: 495px;
+  }
+  
+  @keyframes centerToLeft {
+    from {
+      right: 495px;
+    }
+    to {
+      right: 507px;
+    }
+  }
+  
+  @keyframes centerToRight {
+    from {
+      right: 495px;
+    }
+    to {
+      right: 483px;
+    }
+  }
+}
+
+/* right */
+
+.switch.right-to-left {
+  animation-name: rightToLeft;
+  animation-duration: 0.5s;
+}
+
+.switch.right-to-center {
+  animation-name: rightToCenter;
+  animation-duration: 0.5s;
+}
+
+.switch.right-position {
+  right: 33px;
+}
+
+@keyframes rightToLeft {
+  from {
+    right: 33px;
+  }
+  to {
+    right: 59px;
+  }
+}
+
+@keyframes rightToCenter {
+  from {
+    right: 33px;
+  }
+  to {
+    right: 46px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .switch.right-position {
+    right: 481px;
+  }
+  
+  @keyframes rightToCenter {
+    from {
+      right: 481px;
+    }
+    to {
+      right: 494px;
+    }
+  }
+  
+  @keyframes rightToLeft {
+    from {
+      right: 481px;
+    }
+    to {
+      right: 507px;
+    }
+  }
+}
