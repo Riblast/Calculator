@@ -6,7 +6,6 @@ const KeyPad = ({ value, setValue }) => {
   const handleClick = (e) => {
     setValue(value + e.currentTarget.value)
   }
-  console.log(value)
   return (
     <div className='p-4 w-full h-full bg-backgroundKeypad rounded-md'>
     <div className="h-full grid grid-cols-4 gap-4">

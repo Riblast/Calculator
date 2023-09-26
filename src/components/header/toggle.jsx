@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react'
 import './toggle.css'
 const Toggle = () => {
+  const storage = JSON.parse(localStorage.getItem('theme'))
+
   const [switchState, setSwitchState] = useState({
-    switchPosition: (JSON.parse(localStorage.getItem('theme')).switchPosition ?? 'left'), animation: null
+    switchPosition: storage?.switchPosition ?? 'left', animation: null
   })
-  const [theme, setTheme] = useState(JSON.parse(localStorage.getItem('theme')).theme ?? 'Theme1')
+  const [theme, setTheme] = useState(storage?.theme ?? 'Theme1')
 
   document.querySelector('html').setAttribute('data-theme', theme)
 

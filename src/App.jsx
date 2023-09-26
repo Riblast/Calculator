@@ -4,7 +4,6 @@ import Header from './components/header/main'
 import { useState } from 'react'
 function App () {
   const [value, setValue] = useState('')
-
   return (
     <>
   <div className='bg-backgroundMain w-screen h-screen flex justify-center items-center'>
